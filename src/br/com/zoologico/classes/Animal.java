@@ -15,7 +15,14 @@ public class Animal {
 	  this.especie = especie;
 	  this.idade = idade;
   }
-  
+      //construtor padrão java
+      //NÃO É UTILIZADO 
+		public Animal(){}
+		
+		
+		public Animal(String nome) {
+			this.nome = nome;
+		}
   
   // metodos acessores 
   // GETTERS e  SETTERS
