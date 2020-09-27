@@ -5,6 +5,7 @@ import br.com.zoologico.classes.Animal;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		// criando uma nova instancia do objeto
 		Animal a1 = new Animal("Jojo todinho", "Gato", 1);
 
@@ -17,11 +18,8 @@ public class Main {
 		} else {
 			System.out.println("Não é adulto ");
 		}
-
 		System.out.println("----------------------");
 		
-		
-
 		// Criando uma nova instancia do objeto
 		Animal a2 = new Animal("Spike", "Cachorro", 3);
 
@@ -35,7 +33,6 @@ public class Main {
 			System.out.println("Não é adulto ");
 		}
 		System.out.println("----------------------");
-		
 		
 		Animal a3 = new Animal("Fred");
 
