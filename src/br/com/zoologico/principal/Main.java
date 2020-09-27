@@ -20,6 +20,15 @@ public class Main {
 		a2.especie = "Cachorro";
 		a2.idade = 3;
 		
+		a2.emitirSom();
+		if(a1.isAdulto()) {
+			System.out.println("É adulto ");
+		}else {
+			System.out.println("Não é adulto ");
+		}
+		
+		
+		
 		System.out.println("Olá, o nome do meu animal é " + a1.getNome());
 		System.out.println("Especie " + a1.getEspecie());
 	}
