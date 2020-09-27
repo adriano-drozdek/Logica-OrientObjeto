@@ -7,8 +7,16 @@ public class Animal {
 	// atributos ou propriedade do objeto
 	// nesse momento as propriedads são publicas
   private String nome;
-  public String especie;
-  public  int idade;
+  private String especie;
+  private int idade;
+  
+  public Animal(String nome, String especie, int idade) {
+	  this.nome = nome;
+	  this.especie = especie;
+	  this.idade = idade;
+  }
+  
+  
   // metodos acessores 
   // GETTERS e  SETTERS
   public void setNome(String nome) {

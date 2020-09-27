@@ -6,28 +6,32 @@ public class Main {
 
 	public static void main(String[] args) {
 		// criando uma nova instancia do objeto
-		Animal a1 = new Animal(); 
+		Animal a1 = new Animal("Jojo todinho", "Gato", 1 ); 
 		
-		a1.setNome("Jojo todinho");
-		a1.setEspecie("Gato");
-		a1.setIdade(1) ;
+		
 		
 		// Criando uma nova instancia do objeto
-		Animal a2 = new Animal();
+		Animal a2 = new Animal("Spike", "Cachorro", 3 );
 		
-		// atribuindo os valores as propriedades
-		a2.setNome("Spike");
-		a2.especie = "Cachorro";
-		a2.idade = 3;
+		
+		
 		
 		a2.emitirSom();
+		if(a2.isAdulto()) {
+			System.out.println("É adulto ");
+		}else {
+			System.out.println("Não é adulto ");
+		}
+		
+		a1.emitirSom();
 		if(a1.isAdulto()) {
 			System.out.println("É adulto ");
 		}else {
 			System.out.println("Não é adulto ");
 		}
 		
-		
+		System.out.println("Olá, o nome do meu animal é " + a2.getNome());
+		System.out.println("Especie " + a2.getEspecie());
 		
 		System.out.println("Olá, o nome do meu animal é " + a1.getNome());
 		System.out.println("Especie " + a1.getEspecie());
