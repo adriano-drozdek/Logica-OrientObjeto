@@ -7,7 +7,7 @@ public abstract class Animal {
 	// nesse momento as propriedads são publicas
 	private String nome;
 	private String especie;
-	private int idade;
+	protected int idade;
 	private String corPelo;
 	protected boolean estaVivo;
 
