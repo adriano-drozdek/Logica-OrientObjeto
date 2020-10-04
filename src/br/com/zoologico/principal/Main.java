@@ -13,13 +13,13 @@ public class Main {
 
 		System.out.println("Olá, o nome do meu animal é " + a1.getNome());
 		System.out.println("Especie " + a1.getEspecie());
-
+		a1.morrer();
 		a1.emitirSom();
 
 		if (a1.isAdulto()) {
 			System.out.println("É adulto ");
 		} else {
-			System.out.println("Não é adulto ou está morto ");
+			System.out.println("Não é adulto ");
 		}
 		System.out.println("----------------------");
 
@@ -34,7 +34,7 @@ public class Main {
 		if (a2.isAdulto()) {
 			System.out.println("É adulto ");
 		} else {
-			System.out.println("Não é adulto ou está morto ");
+			System.out.println("Não é adulto ");
 		}
 
 		System.out.println("----------------------");
