@@ -12,4 +12,10 @@ public class Cachorro extends Animal {
 		super(nome);
 	}
 
+	@Override
+	public void emitirSom() {
+		System.out.println("Latindo");
+
+	}
+
 }

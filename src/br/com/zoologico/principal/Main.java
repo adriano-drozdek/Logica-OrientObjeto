@@ -15,6 +15,7 @@ public class Main {
 		System.out.println("Especie " + a1.getEspecie());
 
 		a1.emitirSom();
+
 		if (a1.isAdulto()) {
 			System.out.println("É adulto ");
 		} else {
@@ -29,11 +30,13 @@ public class Main {
 		System.out.println("Especie " + a2.getEspecie());
 
 		a2.emitirSom();
+
 		if (a2.isAdulto()) {
 			System.out.println("É adulto ");
 		} else {
 			System.out.println("Não é adulto ");
 		}
+
 		System.out.println("----------------------");
 
 		Cachorro a3 = new Cachorro("Fred");
