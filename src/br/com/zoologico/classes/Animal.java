@@ -9,12 +9,14 @@ public abstract class Animal {
 	private String especie;
 	private int idade;
 	private String corPelo;
+	private boolean estaVivo;
 
 	public Animal(String nome, String especie, int idade, String corPelo) {
 		this.nome = nome;
 		this.especie = especie;
 		this.idade = idade;
 		this.corPelo = corPelo;
+		this.estaVivo = true;
 	}
 
 	// construtor padrão java
@@ -51,21 +53,31 @@ public abstract class Animal {
 	public int getIdade() {
 		return idade;
 	}
-	
+
 	public void setcorPelo(String corpelo) {
-	    this.corPelo = corPelo;
+		this.corPelo = corPelo;
 	}
-	
+
 	public String corPelo() {
 		return corPelo;
 	}
-	public  abstract void emitirSom();
-	
+
+	public abstract void emitirSom();
 
 	public boolean isAdulto() {
-		return idade >= 1;
+		if (estaVivo) {
+			return idade >= 2;
+		} else {
+			return false;
+		}
 	}
-	
-	
+
+	public boolean isEstaVivo() {
+		return estaVivo;
+	}
+
+	public void morres() {
+		this.estaVivo = false;
+	}
 
 }

@@ -19,7 +19,7 @@ public class Main {
 		if (a1.isAdulto()) {
 			System.out.println("É adulto ");
 		} else {
-			System.out.println("Não é adulto ");
+			System.out.println("Não é adulto ou está morto ");
 		}
 		System.out.println("----------------------");
 
@@ -34,7 +34,7 @@ public class Main {
 		if (a2.isAdulto()) {
 			System.out.println("É adulto ");
 		} else {
-			System.out.println("Não é adulto ");
+			System.out.println("Não é adulto ou está morto ");
 		}
 
 		System.out.println("----------------------");
