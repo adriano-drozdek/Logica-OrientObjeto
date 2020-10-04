@@ -8,11 +8,13 @@ public abstract class Animal {
 	private String nome;
 	private String especie;
 	private int idade;
+	private String corPelo;
 
-	public Animal(String nome, String especie, int idade) {
+	public Animal(String nome, String especie, int idade, String corPelo) {
 		this.nome = nome;
 		this.especie = especie;
 		this.idade = idade;
+		this.corPelo = corPelo;
 	}
 
 	// construtor padrão java
@@ -49,7 +51,14 @@ public abstract class Animal {
 	public int getIdade() {
 		return idade;
 	}
-
+	
+	public void setcorPelo(String corpelo) {
+	    this.corPelo = corPelo;
+	}
+	
+	public String corPelo() {
+		return corPelo;
+	}
 	public void emitirSom() {
 		System.out.println("Som do animal ");
 	}
