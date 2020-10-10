@@ -29,5 +29,8 @@ public class Gato extends Animal {
 		}
 
 	}
+	public void morrer() {
+		this.estaVivo = false;
+	}
 
 }
