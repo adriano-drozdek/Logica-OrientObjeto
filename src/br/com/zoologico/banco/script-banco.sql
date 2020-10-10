@@ -9,3 +9,16 @@ CREATE TABLE `zoo`.`animal` (
   `idade` INT NULL,
   `estavivo` TINYINT NULL,
   PRIMARY KEY (`codigo`));
+  
+  -- definições dos comandos
+  
+  DDL - Data Definition Language - Linguagem de Definição de Dados
+CREATE TABLE
+ALTER TABLE
+DROP TABLE
+
+DML - Data Manipulation Language - Linguagem de Manipulação de Dados
+CREATE ---- INSERT ---- INSERIT
+READ   ---- SELECT ---- CONSULTAR
+UPDATE ---- UPDATE ---- ALTERAR
+DELETE ---- DELETE ---- EXCLUIR
