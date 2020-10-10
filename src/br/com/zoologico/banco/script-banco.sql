@@ -34,3 +34,9 @@ INSERT INTO animal (especie, idade, estavivo)values("Galo", 5, 1);
 
 -- consultando os registros da tabela
 SELECT especie, idade, estavivo FROM animal;
+
+-- buscar todas as linhas da tabela
+SELECT * FROM animal;
+
+-- 	Adiciona uma nova coluna
+ALTER TABLE animal ADD COLUMN NOME VARCHAR(100);
