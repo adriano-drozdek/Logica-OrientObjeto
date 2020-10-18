@@ -91,4 +91,14 @@ alter table cliente modify column  estado int;
 alter table cliente modify column estado varchar(100);
 -- Fim Alteração das Tabelas --
 
+-- inicio da criação dos index --
+alter table produto add index Produto_fornecedor_id (id asc);
+
+alter table venda add index venda_cliente (id_cliente asc);
+
+alter table venda add index venda_fornecedor_id (id_fornecedor asc);
+
+alter table item_venda add index venda_produto_id (id_produto asc);
+
+-- Fim da criação dos index --
 
