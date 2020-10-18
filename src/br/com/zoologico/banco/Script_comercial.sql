@@ -72,7 +72,10 @@ desconto float(10,2),
 primary key(id));
 
 
-
+-- Inicio Alteração das tabelas --
+alter table cliente add column cidade varchar(50);
+-- mostrar a estrutura fisica da tabela --
+describe cliente;
 
 
 
