@@ -308,3 +308,12 @@ select max(valor) as 'Maior valor venda',
  
  -- converter de string para data - str_to_date() YEAR
  select str_to_date('August 05 2017', '%M %d %y');
+
+-- consulta a data e hora atual - now()
+ select now();
+ 
+ -- retorna o dia do mês de uma data
+ select dayofmonth(data_venda) from venda;
+ 
+ -- retorna o valor numérico do dia da semana
+ select dayofweek(data_venda) from venda
