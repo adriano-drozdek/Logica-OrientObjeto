@@ -282,3 +282,8 @@ select v.codigo_venda, v.id_vendedor, v.id_cliente, valor
 from venda v
 having valor > 4000
 order by 4 asc
+
+select max(valor) as 'Maior valor venda',
+ min(valor) as 'Menor valor venda'
+ from venda;
+ select * from venda order by valor asc;
