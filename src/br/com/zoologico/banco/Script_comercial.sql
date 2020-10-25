@@ -253,3 +253,17 @@ select c.nome as 'Nome cliente ', f.nome as 'Nome fornecedor',  vend.nome as 'no
 inner join fornecedor f on v.id_fornecedor = f.id
 inner join cliente c on v.id_cliente = c.id
 inner join vendedor vend on v.id_vendedor = vend.id;
+-- fullscan na tabela --
+-- consulta simples em uma unica tabela --
+select * from produto;
+select * from fornecedor where id = 1; -- DUN RITE LAWN MAINTENANCE --
+	-- CONSULTA LIGANDO TABELAS --
+    select p.descricao, p.valor, p.id_fornecedor, f.nome from produto p inner join fornecedor f on p.id_fornecedor = f.id;
+  
+select c.nome as 'Nome cliente ', f.nome as 'Nome fornecedor',  vend.nome as 'nome vendedor',v.valor, concat(v.desconto, ' %') as desconto,concat('R$ ', v.total ) as total_venda from venda v
+inner join fornecedor f on v.id_fornecedor = f.id
+inner join cliente c on v.id_cliente = c.id
+inner join vendedor vend on v.id_vendedor = vend.id;
+ use comercial; 
+select * from venda v;
+select * from cliente; 
