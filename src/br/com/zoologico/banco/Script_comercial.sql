@@ -275,3 +275,10 @@ FROM PRODUTO P;
 
 -- para contar registro - count()
 select count(*) from nome_tabela;
+
+-- vereficar quantidade - having count()
+
+select v.codigo_venda, v.id_vendedor, v.id_cliente, valor
+from venda v
+having valor > 4000
+order by 4 asc
