@@ -301,3 +301,10 @@ select max(valor) as 'Maior valor venda',
 
 -- completa uma string à direita com um caractere desejado na quantidade desejada
  select rpad(descricao,10, '***') from produto;
+
+ -- consultas com funções de data e tempo
+ -- retornar a diferença entre datas - datediff()
+ select datediff('2015-03-17', '2015-03-15');
+ 
+ -- converter de string para data - str_to_date() YEAR
+ select str_to_date('August 05 2017', '%M %d %y');
