@@ -272,3 +272,6 @@ select * from cliente;
 select format(avg(P.VALOR),2) as 'MEDIA PREÇO COM FORMAT', 
 avg(P.VALOR) as 'MEDIA PREÇO SEM FORMAT'
 FROM PRODUTO P;
+
+-- para contar registro - count()
+select count(*) from nome_tabela;
