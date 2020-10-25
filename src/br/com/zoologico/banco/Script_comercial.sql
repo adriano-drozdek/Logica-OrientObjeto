@@ -298,3 +298,6 @@ select max(valor) as 'Maior valor venda',
  
  -- registros em maiusculo upper()
  select upper(descricao), descricao from produto;
+
+-- completa uma string à direita com um caractere desejado na quantidade desejada
+ select rpad(descricao,10, '***') from produto;
