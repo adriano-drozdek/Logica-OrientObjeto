@@ -317,3 +317,10 @@ select max(valor) as 'Maior valor venda',
  
  -- retorna o valor numérico do dia da semana
  select dayofweek(data_venda) from venda
+
+-- buscar entre dusa datas
+ select * from venda
+ -- where = onde between = entre
+ where data_venda between '2015-01-02' and '2015-01-03'
+ -- ordem data  desc = decrescente asc crescente
+ order by data_venda desc;
