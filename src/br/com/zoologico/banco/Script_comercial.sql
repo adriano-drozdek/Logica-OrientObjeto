@@ -292,3 +292,9 @@ select max(valor) as 'Maior valor venda',
  -- SOMAR CAMPOS - SUM()
  select * from produto;
  select concat('R$ ', format(sum(valor) , 2)) as 'Total valor de produtos.' from produto;
+
+ -- registro em minusculo - lcase() / lower()
+ select lower(nome), upper (nome) from cliente;
+ 
+ -- registros em maiusculo upper()
+ select upper(descricao), descricao from produto;
