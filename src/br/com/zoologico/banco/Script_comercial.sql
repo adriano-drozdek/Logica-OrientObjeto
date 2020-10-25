@@ -287,3 +287,8 @@ select max(valor) as 'Maior valor venda',
  min(valor) as 'Menor valor venda'
  from venda;
  select * from venda order by valor asc;
+
+
+ -- SOMAR CAMPOS - SUM()
+ select * from produto;
+ select concat('R$ ', format(sum(valor) , 2)) as 'Total valor de produtos.' from produto;
